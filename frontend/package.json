@@ -6,16 +6,16 @@
   "scripts": {
     "start": "run-script-os",
     "start:linux:darwin": "concurrently \"node ./node_modules/.bin/http-server -a localhost -p 8081\"  \"sleep 1 && open http://localhost:8081\"",
-    "start:win32": "node node_modules/live-server/live-server --port=8081"
+    "start:win32": "node node_modules/live-server/live-server --port=8080"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^7.0.0",
-    "express": "^4.17.2",
-    "http-server": "^14.0.0",
-    "live-server": "^1.1.0",
-    "mongoose": "^6.1.5",
-    "run-script-os": "^1.0.7"
+    "concurrently": "^5.2.0",
+    "http-server": "^0.11.1",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
   }
 }
