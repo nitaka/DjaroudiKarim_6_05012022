@@ -29,11 +29,11 @@ const errorHandler = error => {
         case 'EACCES':
             console.error(blind + ' requires elevated privileges.');
             process.exit(1);
-            break;
+        break;
         case 'EADDRINUSE':
             console.error(blind + ' is already in use.');
             process.exit(1);
-            break;
+        break;
         default:
             throw error; 
     }
