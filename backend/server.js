@@ -1,5 +1,4 @@
 const http = require('http'); // require commande pour apporter le package
-
 const app = require('./app');
 
 const normalizePort = val => {
